@@ -1,0 +1,64 @@
+.card-body{
+    border:1px solid black;
+    min-height:200px;
+    max-width:250px;
+    overflow:hidden;
+    border-radius: 15px;
+    margin-top:50px;
+    
+}
+.card-body img[alt="card-image"]{
+    min-height:180px;
+}
+.card-day{
+    text-align: center;
+}
+.card-post{
+    text-align: center;
+}
+.card-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background:violet;
+    padding:10px;
+}
+.card-bottom>*{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form-title{
+    font-size:2rem;
+    font-family: sans-serif;
+    text-align: center;
+    background:#feca57;
+    color:white;
+}
+.card-bottom-part{
+   
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.card-day{
+    font-size:0.8rem;
+    font-family: tahoma;
+    
+}
+.card-post{
+    font-size:1.6rem;
+    
+    font-family: tahoma;
+}
+.card-para{
+    text-align: center;
+    font-size:1rem;
+    padding:10px 0;
+    font-family: tahoma;
+}
+.card-bottom-left,
+.card-bottom-center{
+    border-right:1px solid black;
+    
+}
