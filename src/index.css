@@ -1,64 +1,68 @@
-.card-body{
+.form-body{
     border:1px solid black;
-    min-height:200px;
-    max-width:250px;
-    overflow:hidden;
-    border-radius: 15px;
-    margin-top:50px;
-    
-}
-.card-body img[alt="card-image"]{
-    min-height:180px;
-}
-.card-day{
-    text-align: center;
-}
-.card-post{
-    text-align: center;
-}
-.card-bottom{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background:violet;
-    padding:10px;
-}
-.card-bottom>*{
-    color:white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-.form-title{
-    font-size:2rem;
-    font-family: sans-serif;
-    text-align: center;
-    background:#feca57;
-    color:white;
-}
-.card-bottom-part{
+    min-height:300px;
+    width:300px;
+   background-color: #141414;
+   color:white;
+   border-radius: 5px;
+   box-shadow: 1px 1px black;
    
-    display: flex;
-    flex-direction: column;
-    gap:5px;
 }
-.card-day{
-    font-size:0.8rem;
-    font-family: tahoma;
+.form-top-section{
+    width:100%;
+    min-height: 130px;
+    position: relative;
+}
+.form-profile-img img{
+    border-radius:50%;
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:10%;
+    left:2%;
+}
+.form-bottom-section{
+    margin-top: 30px;
+    padding:20px;
     
 }
-.card-post{
-    font-size:1.6rem;
-    
-    font-family: tahoma;
+.form-name{
+    font-size:1.4rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.card-para{
-    text-align: center;
+.form-proffession{
     font-size:1rem;
-    padding:10px 0;
-    font-family: tahoma;
+    padding:5px 0;
+    font-weight: 300;
+    font-family: sans-serif;
 }
-.card-bottom-left,
-.card-bottom-center{
-    border-right:1px solid black;
+.form-text{
+    font-size:1rem;
+    font-family:sans-serif;
+    padding:10px 0;
     
+}
+.form-button{
+    display: flex;
+    gap:10px;
+}
+.form-button button{
+    font-size:0.8rem;
+    font-family: sans-serif;
+    padding:5px;
+    width:50%;
+    text-transform: uppercase;
+}
+.button_first{
+  border:1px solid #2a8dd3;
+  background:transparent;
+  color:#2a8dd3;
+}
+.button_secound{
+    border:1px solid white;
+    background-color: transparent;
+    color:white;
+
 }

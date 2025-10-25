@@ -1,35 +1,19 @@
-import Card from './Components/NewComponents'
-import img1 from './assets/images/img1.jpg'
-import img from './assets/images/download.jpg'
-function CardDesign(){
- return(
-  <>
-  <Card
-  img={img}
-  day="One"
-  post="One"
-  title_one="Read"
-  title_two="Views"
-  paragraph='This is my first card'
-  title_three="Comments"
-  paragraph_one="120"
-  paragraph_two='420'
-  paragraph_three='50'
-  />
-
-  <Card
-  img={img1}
-  day="Two"
-  post="Two"
-  title_one="Read"
-  title_two="Views"
-  paragraph='This is my secound card'
-  title_three="Comments"
-  paragraph_one="310"
-  paragraph_two='910'
-  paragraph_three='96'
-  />
-  </>
- )
+import Contact from "./Components/NewComponents";
+import img from '../src/assets/images/img1.jpg';
+import image1 from './assets/images/mahim.jpg'
+// import image2 from './assets/images/sabbir.jpg'
+function Form(){
+    return(
+        <>
+        <Contact
+        img={image1}
+        img1={img}
+        name="adnan dev"
+        proffesion_name="software engineer"
+        text="Hi,this is adnan.I am software enginner.Highly exprience at telwind,react,nodejs,express js"
+        />
+        
+        </>
+    )
 }
-export default CardDesign
+export default Form

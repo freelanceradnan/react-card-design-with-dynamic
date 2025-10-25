@@ -1,31 +1,36 @@
+// Contact.jsx
+const Contact = (obj) => {
+  return (
+    <>
+      {/* update-form-design */}
+      <div className="form-body">
+        <div
+          className="form-top-section"
+          style={{
+            backgroundImage: `url(${obj.img1})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
 
-const Card=(card)=>{
-    return(
-        <>
-        
-        <div className="card-body">
-            <img src={card.img} alt="card-image"/>
-            <div className="card-bottom-part">
-                <div className="card-day">{card.day} Days Ago</div>
-            <div className="card-post">Post {card.post}</div>
-            <div className="card-para">{card.paragraph}</div>
-            <div className="card-bottom">
-                <div className="card-bottom-left">
-                <div className="card-bottom-left-title">{card.title_one}</div>
-                <div className="card-bottom-left-text">{card.paragraph_one}</div>
-                </div>
-                <div className="card-bottom-center">
-                    <div className="card-bottom-left-title">{card.title_two}</div>
-                    <div className="card-bottom-left-text">{card.paragraph_two}</div>
-                </div>
-                <div className="card-bottom-right">
-                    <div className="card-bottom-left-title">{card.title_three}</div>
-                    <div className="card-bottom-left-text">{card.paragraph_three}</div>
-                </div>
-            </div>
-            </div>
+        <div className="form-bottom-section">
+          <div className="form-name">{obj.name}</div>
+          <div className="form-proffession">{obj.proffesion_name}</div>
+          <div className="form-text">{obj.text}</div>
+
+          <div className="form-button">
+            <button className="button_first">Follow</button>
+            <button className="button_secound">More Info</button>
+          </div>
         </div>
-        </>
-    )
-}
-export default Card
+
+        <div className="form-profile-img">
+          <img src={obj.img} alt="profile" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Contact;
